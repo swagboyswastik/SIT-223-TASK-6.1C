@@ -31,14 +31,14 @@ pipeline {
                     emailext(
                         subject: "Unit and Integration Tests - Successful",
                         body: "All unit and integration tests passed.",
-                        to: "your_email@example.com"
+                        to: "swastik27dec@gmail.com"
                     )
                 }
                 failure {
                     emailext(
                         subject: "Unit and Integration Tests - Failed",
                         body: "One or more tests failed. Check the logs for details.",
-                        to: "your_email@example.com"
+                        to: "swastik27dec@gmail.com"
                     )
                 }
             }
@@ -65,14 +65,14 @@ pipeline {
                     emailext(
                         subject: "Security Scan - Successful",
                         body: "No vulnerabilities detected during the security scan.",
-                        to: "your_email@example.com"
+                        to: "swastik27dec@gmail.com"
                     )
                 }
                 failure {
                     emailext(
                         subject: "Security Scan - Failed",
                         body: "Vulnerabilities found during the security scan. Please review the report.",
-                        to: "your_email@example.com"
+                        to: "swastik27dec@gmail.com"
                     )
                 }
             }
@@ -111,7 +111,7 @@ pipeline {
 
     post {
         always {
-            echo "Pipeline execution complete."
+            echo "Pipeline execution complete by Swastik Arora."
         }
     }
 }
